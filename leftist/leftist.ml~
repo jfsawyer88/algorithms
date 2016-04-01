@@ -1,0 +1,8 @@
+(** functional heap/priority queue **)
+(** borrowed from http://typeocaml.com/2015/03/12/heap-leftist-tree/ **)
+
+type 'a leftist =
+  | Leaf
+  | Node of 'a leftist * 'a * 'a leftist * int
+;;
+

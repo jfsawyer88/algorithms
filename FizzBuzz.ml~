@@ -1,0 +1,8 @@
+(** FizzBuzz Challenge **)
+
+let loop i =
+  if i < 100 then
+    begin
+      let printed = false in
+      if 0 = i mod 3 then
+	(printed = true; print_str
